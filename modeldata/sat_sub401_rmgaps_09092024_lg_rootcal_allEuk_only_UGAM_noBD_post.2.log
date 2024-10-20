@@ -1,0 +1,39 @@
+
+phylobayes version 4.1
+
+init seed : 299095
+
+data file : sat_combined_full_run12_edited_N-term_nogaps_gpf_noSuffix_03242024_subsampledRed_redo2_04042024_RemoveEmptyColumns.fa.phy.dedupe.EDITRMCamp.phy4.txt
+number of taxa : 401
+number of sites: 751
+
+fast computation / high memory use 
+
+fixed tree topology: sat_combined_full_run12_edited_subsampled401_removegaps_09092024_EDITRMCamp.phy.treefile.MADrooted.rooted
+
+branch lengths ~ iid gamma of mean mu and variance epsilon*mu^2
+mu ~ exponential of mean 0.1
+epsilon ~ exponential of mean 1
+
+site homogeneous model: free equilibrium frequencies (pi inferred from data)
+pi ~ uniform
+
+relative exchange rates:
+empirical (lg, Le and Gascuel 2008)
+
+rates ~ gamma of mean 1 and variance 1/alpha
+4 discrete categories (Yang 1994)
+alpha ~ exponential of mean 1
+
+flexible, non-autocorrelated clock (uncorrelated gamma)
+variance parameter sigma^2 ~ exponential of mean 1
+
+calibrations : RootCal_all_euk.txt
+hard bounds
+lower bounds as in Paml 4.2 (truncated Cauchy), p = 0.1 and c = 1
+prior on root age: gamma of mean 3650 and standard deviation 650
+
+WARNING: it is always advised to check the prior on divergence times in the presence of calibrations, by using the -prior option
+
+prior on divergence times : uniform
+
